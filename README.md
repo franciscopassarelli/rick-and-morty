@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+# Rick and Morty App - Componente "Tarjeta"
 
-## Project info
+Este proyecto consiste en el desarrollo de una librería de componentes utilizando **React** y **TypeScript**, donde se implementa un componente principal denominado **"Tarjeta"**, inspirado en los personajes de la serie *Rick and Morty*. El diseño del componente sigue las especificaciones proporcionadas en un archivo de Figma.
 
-**URL**: https://lovable.dev/projects/3989e059-8101-42f0-94f7-295675da0774
+---
 
-## How can I edit this code?
+## 🚀 Objetivo del Proyecto
 
-There are several ways of editing your application.
+Desarrollar un componente reutilizable y accesible que represente visualmente un personaje de la serie, respetando la identidad visual del diseño original en Figma. Además, se integró dentro de una aplicación funcional con navegación y funcionalidades adicionales.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3989e059-8101-42f0-94f7-295675da0774) and start prompting.
+## 🧪 Tecnologías Utilizadas
 
-Changes made via Lovable will be committed automatically to this repo.
+- ⚛️ React + Vite
+- 📦 TypeScript
+- 🎨 TailwindCSS
+- 📄 React Router DOM
+- ✅ Jest + React Testing Library (para pruebas unitarias)
+- 📦 ESLint + Prettier (formato y linting)
+- 🌐 API pública de Rick and Morty: [rickandmortyapi.com](https://rickandmortyapi.com/)
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🧱 Estructura del Proyecto (Carpetas clave)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+📁 src/
+│
+├── components/
+│ └── /ui
+│ └── Card.test.tsx
+│
+├── 
+│
+├── pages/
+│ └── Index.tsx # Página de personajes favoritos
+│ └── NotFound.tsx # Página 404
+│
+├── services/
+│ └── api.ts # Funciones de fetch a la API
+│-App.tsx
+|-App.css
+|-main.tsx
+|-index.css
+|-index.html
+|---------------------------------------------
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📱 Responsivo
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+La aplicación es **totalmente responsiva**. Se adapta correctamente a dispositivos móviles, tablets y escritorios utilizando TailwindCSS.
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 🧪 Pruebas
 
-**Edit a file directly in GitHub**
+El componente **Tarjeta** cuenta con pruebas unitarias implementadas con **Jest** y **React Testing Library**.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Para correr los tests:
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/3989e059-8101-42f0-94f7-295675da0774) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```bash
+npm run test
